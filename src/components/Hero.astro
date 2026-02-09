@@ -60,19 +60,27 @@
     }
 
     .primary {
-        background: black;
+        background: var(--primary);
         color: white;
-        padding: 0.75rem 1.25rem;
+        padding: 0.85rem 1.4rem;
         text-decoration: none;
-        border-radius: 6px;
+        border-radius: var(--radius);
+        font-weight: 600;
+        transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .primary:hover {
+        background: var(--primary-hover);
+        transform: translateY(-1px);
     }
 
     .secondary {
-        border: 1px solid black;
-        padding: 0.75rem 1.25rem;
+        border: 1px solid var(--primary);
+        padding: 0.85rem 1.4rem;
         text-decoration: none;
-        border-radius: 6px;
-        color: black;
+        border-radius: var(--radius);
+        color: var(--primary);
+        font-weight: 600;
     }
 
     .trust {

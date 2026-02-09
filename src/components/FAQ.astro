@@ -55,17 +55,22 @@
     }
 
     details {
-        border-bottom: 1px solid #eee;
-        padding: 1rem 0;
+        border-bottom: 1px solid var(--border);
+        padding: 1.2rem 0;
     }
 
     summary {
         cursor: pointer;
         font-weight: 600;
+        list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
     }
 
     details p {
         margin-top: 0.75rem;
-        color: #555;
+        color: var(--muted);
     }
 </style>
