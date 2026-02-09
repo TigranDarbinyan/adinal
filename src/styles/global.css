@@ -34,3 +34,12 @@ h1, h2, h3 {
 p {
     color: var(--muted);
 }
+
+
+.services {
+    background: #fafafa;
+}
+
+section + section {
+    border-top: 1px solid var(--border);
+}
