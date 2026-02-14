@@ -1,46 +1,47 @@
 <section class="faq">
-    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
 
-    <details>
-        <summary>Is laser hair removal painful?</summary>
-        <p>
-            Most clients describe the sensation as a mild snap or warmth.
-            Our FDA-approved technology is designed to minimize discomfort.
-        </p>
-    </details>
+        <p class="faq-label">FAQ</p>
 
-    <details>
-        <summary>How many sessions will I need?</summary>
-        <p>
-            On average, 6–8 sessions are recommended for optimal results.
-            This varies depending on hair type, skin tone, and treatment area.
-        </p>
-    </details>
+        <h2>Frequently Asked Questions</h2>
 
-    <details>
-        <summary>Is laser hair removal safe?</summary>
-        <p>
-            Yes. Treatments are performed using FDA-approved equipment by
-            certified laser specialists with safety as a top priority.
-        </p>
-    </details>
+        <div class="faq-list">
 
-    <details>
-        <summary>Does it work for all skin types?</summary>
-        <p>
-            Yes. Our technology is suitable for all skin tones and hair types,
-            following a personalized consultation.
-        </p>
-    </details>
+            <details>
+                <summary>Is laser hair removal painful?</summary>
+                <p>
+                    Most clients describe it as a mild warming sensation.
+                    Our technology is designed to provide effective results while maintaining comfort.
+                </p>
+            </details>
 
-    <details>
-        <summary>Do you offer a free consultation?</summary>
-        <p>
-            Absolutely. We offer a free consultation to assess your needs,
-            answer questions, and build a personalized treatment plan.
-        </p>
-    </details>
+            <details>
+                <summary>How many sessions will I need?</summary>
+                <p>
+                    Most clients require 6–8 sessions for optimal results.
+                    This may vary depending on the treatment area and individual hair growth cycle.
+                </p>
+            </details>
+
+            <details>
+                <summary>Is it safe?</summary>
+                <p>
+                    Yes. Treatments are performed using certified equipment and are fully licensed by the Arizona Department of Health Services.
+                </p>
+            </details>
+
+            <details>
+                <summary>Do you offer free consultations?</summary>
+                <p>
+                    Yes. We offer a complimentary consultation to assess your needs and answer all questions before beginning treatment.
+                </p>
+            </details>
+
+        </div>
+
+    </div>
 </section>
+
 
 <style>
     .faq {
@@ -72,5 +73,50 @@
     details p {
         margin-top: 0.75rem;
         color: var(--muted);
+    }
+
+    .faq {
+        padding: 6rem 1.5rem;
+        background: #faf8f6;
+    }
+
+    .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .faq-label {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        color: #777;
+        margin-bottom: 1rem;
+    }
+
+    .faq h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
+        margin-bottom: 3rem;
+    }
+
+    .faq-list {
+        text-align: left;
+    }
+
+    .faq details {
+        border-bottom: 1px solid #eaeaea;
+        padding: 1.2rem 0;
+    }
+
+    .faq summary {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .faq details p {
+        margin-top: 0.8rem;
+        color: #444;
+        line-height: 1.6;
     }
 </style>
