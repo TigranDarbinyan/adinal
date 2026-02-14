@@ -17,13 +17,11 @@ export default function MobileCTA() {
 
   return (
     <div style={styles.wrapper}>
-      <a href="tel:+1XXXXXXXXXX" style={styles.call}>
+      <a href="tel:+16028933883" style={styles.call}>
         Call
       </a>
       <a
-        href="https://www.fresha.com/"
-        target="_blank"
-        rel="noopener"
+        href="#services"
         style={styles.book}
       >
         Book
