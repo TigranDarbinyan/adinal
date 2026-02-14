@@ -1,33 +1,72 @@
-<section class="services">
-    <h2>Laser Hair Removal Services</h2>
+<section id="services" class="services">
+    <div class="services-container">
 
-    <div class="grid">
-        <div class="card">
-            <h3>Full Body</h3>
-            <p>Comprehensive treatment for smooth, long-lasting results.</p>
-        </div>
+        <p class="services-label">SERVICES</p>
 
-        <div class="card">
-            <h3>Face & Neck</h3>
-            <p>Precision laser treatment for sensitive facial areas.</p>
-        </div>
+        <h2>Laser Hair Removal Treatments</h2>
 
-        <div class="card">
-            <h3>Underarms</h3>
-            <p>Quick sessions with noticeable results in fewer treatments.</p>
-        </div>
+        <div class="services-grid">
 
-        <div class="card">
-            <h3>Bikini / Brazilian</h3>
-            <p>Safe and effective treatments tailored to your comfort.</p>
+            <div class="service-card">
+                <h3>Full Body</h3>
+                <div class="price">$350</div>
+                <a href="https://www.fresha.com" target="_blank" class="service-btn">
+                    Book Appointment
+                </a>
+            </div>
+
+            <div class="service-card">
+                <h3>Full Legs</h3>
+                <div class="price">$140</div>
+                <a href="https://www.fresha.com" target="_blank" class="service-btn">
+                    Book Appointment
+                </a>
+            </div>
+
+            <div class="service-card">
+                <h3>Half Legs</h3>
+                <div class="price">$90</div>
+                <a href="https://www.fresha.com" target="_blank" class="service-btn">
+                    Book Appointment
+                </a>
+            </div>
+
+            <div class="service-card">
+                <h3>Upper Body</h3>
+                <div class="price">$200</div>
+                <a href="https://www.fresha.com" target="_blank" class="service-btn">
+                    Book Appointment
+                </a>
+            </div>
+
+            <div class="service-card">
+                <h3>Full Stomach & Chest</h3>
+                <div class="price">$120</div>
+                <a href="https://www.fresha.com" target="_blank" class="service-btn">
+                    Book Appointment
+                </a>
+            </div>
+
+            <div class="service-card">
+                <h3>Shoulders</h3>
+                <div class="price">$70</div>
+                <a href="https://www.fresha.com" target="_blank" class="service-btn">
+                    Book Appointment
+                </a>
+            </div>
+
+            <div class="service-card">
+                <h3>Upper Lip</h3>
+                <div class="price">$35</div>
+                <a href="https://www.fresha.com" target="_blank" class="service-btn">
+                    Book Appointment
+                </a>
+            </div>
+
         </div>
     </div>
-
-    <p class="price">
-        Sessions starting from <strong>$39</strong>.
-        Free consultation available.
-    </p>
 </section>
+
 
 <style>
     .services {
@@ -78,4 +117,71 @@
         margin-top: 0.5rem;
         font-size: 1.1rem;
     }
+
+    .services {
+        padding: 6rem 1.5rem;
+        background: #faf8f6;
+        text-align: center;
+    }
+
+    .services-container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .services-label {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        color: #777;
+        margin-bottom: 1rem;
+    }
+
+    .services h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
+        margin-bottom: 3rem;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .service-card {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 14px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .price {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    .service-btn {
+        display: inline-block;
+        padding: 0.8rem 1.6rem;
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
 </style>
