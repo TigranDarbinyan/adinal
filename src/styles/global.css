@@ -65,7 +65,7 @@ section {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    padding: 1.5rem;
+    padding: 0.5rem 1.4rem;
 }
 
 .logo img {
@@ -91,7 +91,7 @@ section {
 .mobile-menu {
     display: none;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.3rem 1rem;
     background: #fdfbf9;
     border-top: 1px solid #eee;
 }

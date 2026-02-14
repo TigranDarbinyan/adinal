@@ -33,4 +33,12 @@
   toggle?.addEventListener('click', () => {
     menu?.classList.toggle('open');
   });
+
+  const menuLinks = document.querySelectorAll('#mobileMenu a');
+
+  menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+          menu.classList.remove('open');
+      });
+  });
 </script>
