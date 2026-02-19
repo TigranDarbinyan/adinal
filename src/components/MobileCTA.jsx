@@ -21,7 +21,8 @@ export default function MobileCTA() {
         Call
       </a>
       <a
-        href="#services"
+        href="https://www.fresha.com/a/adinal-laser-studio-scottsdale-6730-east-mcdowell-road-p7f05klt/booking?menu=true&share=true&pId=2786063&cartId=22e40be6-bfd4-45de-8b09-7fcee8b55612"
+        target="_blank"
         style={styles.book}
       >
         Book
