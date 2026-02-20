@@ -1,43 +1,55 @@
-# Astro Starter Kit: Minimal
+# Adinal Laser Studio Website
 
-```sh
-npm create astro@latest -- --template minimal
+Marketing landing page for **Adinal Laser Studio** (Scottsdale, Arizona), built with Astro + React.
+
+## What this site includes
+
+- Hero section with primary booking/call CTAs
+- About section for practitioner background
+- License & certification gallery with lightbox preview
+- Service list with booking links
+- Contact/location section with embedded map
+- FAQ section
+- Mobile bottom CTA bar (Call / Book)
+
+## Tech stack
+
+- [Astro](https://astro.build/) for static site generation
+- React (for the mobile CTA component)
+- Plain CSS (global + component-level styles)
+
+## Getting started
+
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Site runs locally at `http://localhost:4321` by default.
 
-## 🚀 Project Structure
+## Scripts
 
-Inside of your Astro project, you'll see the following folders and files:
+- `npm run dev` — start development server
+- `npm run build` — build production output into `dist/`
+- `npm run preview` — preview the production build locally
+- `npm run astro` — run Astro CLI commands
+
+## Build
+
+```bash
+npm run build
+```
+
+## Project structure
 
 ```text
 /
-├── public/
+├── public/              # Static assets (images, favicon, etc.)
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/      # Page sections and reusable UI blocks
+│   ├── layouts/         # Shared page layout
+│   ├── pages/           # Route entry points
+│   └── styles/          # Global styling
+├── astro.config.mjs
 └── package.json
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
