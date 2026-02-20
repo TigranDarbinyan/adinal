@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 
+const BOOKING_URL =
+  "https://www.fresha.com/a/adinal-laser-studio-scottsdale-6730-east-mcdowell-road-p7f05klt/booking?menu=true&share=true&pId=2786063&cartId=22e40be6-bfd4-45de-8b09-7fcee8b55612";
+
 export default function MobileCTA() {
   const [visible, setVisible] = useState(false);
 
@@ -17,13 +20,15 @@ export default function MobileCTA() {
 
   return (
     <div style={styles.wrapper}>
-      <a href="tel:+16028933883" style={styles.call}>
+      <a href="tel:+16028933883" style={styles.call} aria-label="Call Adinal Laser Studio">
         Call
       </a>
       <a
-        href="https://www.fresha.com/a/adinal-laser-studio-scottsdale-6730-east-mcdowell-road-p7f05klt/booking?menu=true&share=true&pId=2786063&cartId=22e40be6-bfd4-45de-8b09-7fcee8b55612"
+        href={BOOKING_URL}
         target="_blank"
+        rel="noopener noreferrer"
         style={styles.book}
+        aria-label="Book an appointment"
       >
         Book
       </a>
